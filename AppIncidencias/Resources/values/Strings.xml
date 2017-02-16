@@ -2,4 +2,10 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">AppIncidencias</string>
+	<string-array name="tipousuarios">
+        <item>Admin</item>
+        <item>Limpieza</item>
+        <item>Mantenimiento</item>
+        <item>Conserje</item>
+    </string-array>
 </resources>
