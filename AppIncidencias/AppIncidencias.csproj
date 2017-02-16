@@ -82,9 +82,17 @@
     <AndroidResource Include="Resources\layout\Main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+<<<<<<< 788c45185614df2b788345c7ca6b360f432934f8
     <AndroidResource Include="Resources\layout\Registro.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+=======
+    <AndroidResource Include="Resources\layout\Registro.axml" />
+    <AndroidResource Include="Resources\layout\AltaOrdenLimpieza.axml" />
+    <AndroidResource Include="Resources\layout\GestionInventario.axml" />
+    <AndroidResource Include="Resources\layout\DetalleHabitacion.axml" />
+    <AndroidResource Include="Resources\layout\HomeAdmin.axml" />
+>>>>>>> Creadas vistas vacias
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

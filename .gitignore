@@ -5,7 +5,8 @@
 *.suo
 *.user
 *.sln.docstates
-*.userprefs
+AppIncidencias.userprefs
+
 # Build results
 
 [Dd]ebug/

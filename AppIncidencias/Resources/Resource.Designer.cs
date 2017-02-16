@@ -171,6 +171,7 @@ namespace AppIncidencias
 		{
 			
 			// aapt resource value: 0x7f030000
+<<<<<<< 788c45185614df2b788345c7ca6b360f432934f8
 			public const int DetalleMantenimiento = 2130903040;
 			
 			// aapt resource value: 0x7f030001
@@ -181,6 +182,18 @@ namespace AppIncidencias
 			
 			// aapt resource value: 0x7f030003
 			public const int Login = 2130903043;
+=======
+			public const int AltaOrdenLimpieza = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int DetalleHabitacion = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int GestionInventario = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int HomeAdmin = 2130903043;
+>>>>>>> Creadas vistas vacias
 			
 			// aapt resource value: 0x7f030004
 			public const int Main = 2130903044;

@@ -1,15 +1,10 @@
 ﻿<Properties StartupConfiguration="{1996E5CD-9447-4514-B5FB-A8BA48193597}|Default">
-  <MonoDevelop.Ide.Workbench>
-    <Files>
-      <File FileName="AppIncidencias/MainActivity.cs" Line="15" Column="55" />
-      <File FileName="AppIncidencias/Resources/values/Strings.xml" Line="5" Column="35" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.AppIncidencias AndroidDesignerPreferredDevice="Nexus 5" PreferredExecutionTarget="Android.Android_Accelerated_x86" AndroidDesignerPreferredTheme="Theme.Translucent.NoTitleBar" />
+  <MonoDevelop.Ide.ItemProperties.AppIncidencias AndroidDesignerPreferredDevice="Nexus 5" PreferredExecutionTarget="Android.Android_Accelerated_x86" AndroidDesignerPreferredTheme="Theme.DeviceDefault" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
