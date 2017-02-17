@@ -92,11 +92,7 @@
     <AndroidResource Include="Resources\layout\GestionInventario.axml" />
     <AndroidResource Include="Resources\layout\DetalleHabitacion.axml" />
     <AndroidResource Include="Resources\layout\HomeAdmin.axml" />
-<<<<<<< 21a8f446c5530d82ae9f92485ae5c0dfef1fadc2
 >>>>>>> Creadas vistas vacias
-=======
-    <AndroidResource Include="Resources\drawable\location.png" />
->>>>>>> Nuevas vistas
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
