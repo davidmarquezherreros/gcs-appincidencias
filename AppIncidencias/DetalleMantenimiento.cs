@@ -19,7 +19,8 @@ namespace AppIncidencias
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+            // Asociamos vista
+            SetContentView(Resource.Layout.DetalleMantenimiento);
         }
     }
 }

@@ -3,5 +3,135 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollViewDetalleMantenimiento">
+        <LinearLayout
+            android:id="@+id/linearDetalleMantenimiento"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/TextViewDetalleMantenimiento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detalle incidencia"
+                    android:textSize="14pt"
+                    android:layout_margin="8dp"
+                    android:layout_alignParentLeft="true" />
+                <ImageView
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewDetalleMantenimiento"
+                    android:layout_gravity="left"
+                    android:layout_margin="8dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewUbicacionDetalleMantenimiento"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="50dp" />
+                <TextView
+                    android:text="Ubicación Habitación"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewUbicacionDetalleMantenimiento"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="Habitación: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewHabitacionDetalleMantenimiento"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:text="Ver detalles"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewHabitacionDetalleMantenimiento"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="5dp"
+                    android:autoLink="all"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:clickable="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="Observaciones:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewObservacionesDetalleMantenimiento"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText1"
+                android:editable="false"
+                android:clickable="false"
+                android:focusable="false" />
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="Encargado:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewHorarioDetalleMantenimiento"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:text="encargado"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewEncargadoHabitacionDetalleMantenimiento"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
