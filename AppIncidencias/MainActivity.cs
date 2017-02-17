@@ -11,8 +11,11 @@ namespace AppIncidencias
         {
             base.OnCreate(bundle);
 
-            // Set our view from the "main" layout resource
+            // Cargar una vista
             SetContentView (Resource.Layout.Registro);
+
+            //Cargar una actividad que a su vez cargará su propia vista
+            //StartActivity(typeof(InventarioLimpiezaActivity));
         }
     }
 }
