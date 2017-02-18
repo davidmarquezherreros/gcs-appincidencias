@@ -1,3 +1,67 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Notificaciones"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <TextView
+            android:text="Articulo mantenimiento"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewArticuloMantenimiento"
+            android:layout_gravity="center"
+            android:textColor="#fff44336"
+            android:layout_margin="10dp" />
+        <TextView
+            android:text="Articulo limpieza"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewArticuloLimpieza"
+            android:layout_gravity="center"
+            android:textColor="#fff44336"
+            android:layout_margin="10dp" />
+        <TextView
+            android:text="Nuevas incidencias"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewIncidencias"
+            android:layout_gravity="center"
+            android:textColor="#fff44336"
+            android:layout_margin="10dp" />
+        <TextView
+            android:text="Solicitudes de limpieza"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLimpieza"
+            android:layout_gravity="center"
+            android:textColor="#fff44336"
+            android:layout_margin="10dp" />
+        <TextView
+            android:text="Baja cantidad"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewBajaCantidad"
+            android:layout_gravity="center"
+            android:textColor="#fff44336"
+            android:layout_margin="10dp" />
+    </LinearLayout>
 </LinearLayout>
