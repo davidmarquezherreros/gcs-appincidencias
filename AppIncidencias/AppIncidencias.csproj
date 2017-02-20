@@ -83,6 +83,7 @@
     <AndroidResource Include="Resources\layout\DetalleProducto.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\InventarioMantenimiento.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
