@@ -40,10 +40,9 @@
         android:id="@+id/textView3"
         android:layout_marginTop="20dp" />
     <Spinner
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner2"
-        android:layout_weight="3.3dp" />
+        android:id="@+id/spinner2" />
     <TextView
         android:text="Encargado mantenimiento"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -52,10 +51,9 @@
         android:id="@+id/textView4"
         android:layout_marginTop="20dp" />
     <Spinner
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner3"
-        android:layout_weight="3.3dp" />
+        android:id="@+id/spinner3" />
     <TextView
         android:text="Observaciones"
         android:textAppearance="?android:attr/textAppearanceLarge"
