@@ -77,13 +77,21 @@
     <AndroidResource Include="Resources\layout\Limpieza.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\AltaOrdenMantenimeinto.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\DetalleProducto.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Registro.axml" />
-    <AndroidResource Include="Resources\layout\AltaOrdenLimpieza.axml" />
+    <AndroidResource Include="Resources\layout\AltaOrdenLimpieza.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\GestionInventario.axml" />
     <AndroidResource Include="Resources\layout\DetalleHabitacion.axml" />
     <AndroidResource Include="Resources\layout\HomeAdmin.axml" />
