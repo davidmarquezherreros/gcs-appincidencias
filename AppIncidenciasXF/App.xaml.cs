@@ -8,7 +8,7 @@ namespace AppIncidenciasXF
 		{
 			InitializeComponent();
 
-			MainPage = new AppIncidenciasXFPage();
+			MainPage = new MasterPage();
 		}
 
 		protected override void OnStart()

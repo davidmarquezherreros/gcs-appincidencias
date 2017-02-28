@@ -1,5 +1,12 @@
-﻿<Properties StartupConfiguration="{1996E5CD-9447-4514-B5FB-A8BA48193597}|Default">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{30916F5D-F07F-4365-85A7-7F82DC73D1AA}|Default">
+  <MonoDevelop.Ide.ItemProperties.AppIncidenciasXF.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="AppIncidenciasXF/MasterPage.xaml.cs" Line="17" Column="1" />
+      <File FileName="AppIncidenciasXF/App.xaml.cs" Line="11" Column="1" />
+      <File FileName="AppIncidenciasXF/obj/Debug/AppIncidenciasXF.MasterPage.xaml.g.cs" Line="21" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
@@ -7,4 +14,5 @@
   <MonoDevelop.Ide.ItemProperties.AppIncidencias PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.AppIncidenciasXF.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5709FCD2-29FE-435B-B301-0FB33AAB2EE8" />
 </Properties>
