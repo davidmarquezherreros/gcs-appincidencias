@@ -39,6 +39,9 @@
     <EmbeddedResource Include="AltaOrdenLimpieza.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionInventario.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -56,6 +59,9 @@
     </Compile>
     <Compile Include="AltaOrdenLimpieza.xaml.cs">
       <DependentUpon>AltaOrdenLimpieza.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GestionInventario.xaml.cs">
+      <DependentUpon>GestionInventario.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

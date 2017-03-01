@@ -7,12 +7,16 @@ namespace AppIncidenciasXF
 {
 	public partial class AltaOrdenLimpieza : ContentPage
 	{
-		// Dictionary to get Color from color name.
-		Dictionary<string, int> nameToColor = new Dictionary<string, int>
+		List<string> habitaciones = new List<string>
 		{
-			{ "Habitacion", 1 },{ "Habitacion", 2 },
-			{ "Habitacion", 3 },{ "Habitacion", 4 }
+			"Habitacion 1",
+			"Habitacion 2",
+			"Habitacion 3",
+			"Habitacion 4",
+			"Habitacion 5",
 		};
+		public List<string> Habitaciones => habitaciones;
+
 		public AltaOrdenLimpieza()
 		{
 			InitializeComponent();

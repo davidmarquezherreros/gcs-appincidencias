@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppIncidenciasXF.AltaOrdenLimpieza">
-	<ContentPage.Content>
+	<ContentPage.Content Margin="5,30,5,5">
+		<ScrollView Margin="5,30,5,5">
+			<StackLayout >
+				<Label Text="Alta orden limpieza" FontSize="25"/>
+				<Label Text="Habitacion:" FontSize="15"/>
+				<Picker Title="Elige una habitacion">
+					<Picker.Items>
+						<x:String>Habitacion 1</x:String>
+				        <x:String>Habitacion 2</x:String>
+				        <x:String>Habitacion 3</x:String>
+				        <x:String>Habitacion 4</x:String>
+					</Picker.Items>
+				</Picker>
+				<Label Text="Horario:" FontSize="15"/>
+				<DatePicker Format="dd/MM/yyyy"></DatePicker>
+				<Label Text="Elige al encargado:" FontSize="15"/>
+				<Picker Title="Encargado:">
+					<Picker.Items>
+						<x:String>Encargado 1</x:String>
+				        <x:String>Encargado 2</x:String>
+				        <x:String>Encargado 3</x:String>
+				        <x:String>Encargado 4</x:String>
+					</Picker.Items>
+				</Picker>
+				<Button Text="Crear orden"/>
+			</StackLayout>
+		</ScrollView>
 	</ContentPage.Content>
 </ContentPage>
