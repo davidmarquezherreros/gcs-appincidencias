@@ -1,6 +1,15 @@
-﻿<Properties StartupConfiguration="{596DF6FE-D8EE-4E4F-9BF4-BE8D9626A7CB}|Default">
+﻿<Properties StartupConfiguration="{30916F5D-F07F-4365-85A7-7F82DC73D1AA}|Default">
   <MonoDevelop.Ide.ItemProperties.AppIncidenciasXF.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF/AltaOrdenLimpieza.xaml.cs">
+    <Files>
+      <File FileName="AppIncidenciasXF/App.xaml" Line="1" Column="1" />
+      <File FileName="AppIncidenciasXF/App.xaml.cs" Line="10" Column="4" />
+      <File FileName="AppIncidenciasXF/MasterPage.xaml.cs" Line="43" Column="23" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="AppIncidenciasXF/obj/Debug/AppIncidenciasXF.MasterPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="AppIncidenciasXF/AltaOrdenLimpieza.xaml.cs" Line="11" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

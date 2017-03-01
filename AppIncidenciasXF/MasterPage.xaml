@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  xmlns:local="clr-namespace:MasterPage;assembly=MasterPage" x:Class="AppIncidenciasXF.MasterPage" MasterBehavior="Popover">
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  xmlns:local="clr-namespace:MasterPage;assembly=MasterPage" x:Class="AppIncidenciasXF.MasterPage" 
+	>
 	<MasterDetailPage.Master>
-		<ContentPage Padding="10" BackgroundColor="Gray" Title="Master Page" Icon="menu-icon.png">
+		<ContentPage BackgroundColor="Gray" Title="Master Page" Icon="menu-icon.png">
 			<StackLayout Orientation="Vertical" Margin="5,30,5,5">
 				<Label Text="Menu"/>
+				<ContentView Padding="10">
+					<Image Source="avatar.png" HeightRequest="50" WidthRequest="50"/>
+				</ContentView>
 				<Button Text="Registro" BackgroundColor="Yellow" Clicked="Handle_Clicked"></Button>
-				<Button Text="Registro" BackgroundColor="Yellow" Clicked="Handle_Clicked2"></Button>
+				<Button Text="Limpieza" BackgroundColor="Yellow" Clicked="Handle_Clicked2"></Button>
+				<Button Text="Mantenimiento" BackgroundColor="Yellow" Clicked="Handle_Clicked3"></Button>
+				<Button Text="Inventario" BackgroundColor="Yellow" Clicked="Handle_Clicked4"></Button>
+				<Button Text="Fichar" BackgroundColor="Yellow" Clicked="Handle_Clicked5"></Button>
+				<Button Text="Salir" BackgroundColor="Yellow" Clicked="Handle_Clicked6"></Button>
+				
 			</StackLayout>
 		</ContentPage>
 		

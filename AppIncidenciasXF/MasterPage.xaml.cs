@@ -12,14 +12,35 @@ namespace AppIncidenciasXF
 		{
 			InitializeComponent();
 			// Poner la pagina home aqui
+			Detail = new NavigationPage(new Registro()); // Esta vista es la que se carga por defecto
 
 		}
 		void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			Detail = new Registro();
+			Detail = new NavigationPage(new Registro());
 		}
 
 		void Handle_Clicked2(object sender, System.EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		void Handle_Clicked3(object sender, System.EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		void Handle_Clicked4(object sender, System.EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		void Handle_Clicked5(object sender, System.EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		void Handle_Clicked6(object sender, System.EventArgs e)
 		{
 			throw new NotImplementedException();
 		}
