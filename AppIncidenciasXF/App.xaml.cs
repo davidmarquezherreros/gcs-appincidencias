@@ -7,7 +7,6 @@ namespace AppIncidenciasXF
 		public App()
 		{
 			InitializeComponent();
-
 			MainPage = new MasterPage();
 		}
 

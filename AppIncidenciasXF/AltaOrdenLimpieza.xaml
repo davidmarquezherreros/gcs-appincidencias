@@ -15,6 +15,7 @@
 				</Picker>
 				<Label Text="Horario:" FontSize="15"/>
 				<DatePicker Format="dd/MM/yyyy"></DatePicker>
+				<TimePicker Format="HH:ss"></TimePicker>
 				<Label Text="Elige al encargado:" FontSize="15"/>
 				<Picker Title="Encargado:">
 					<Picker.Items>
