@@ -26,7 +26,8 @@
 					</Picker.Items>
 				</Picker>
 				<Label Text="Observaciones:" FontSize="15"/>
-				<Label Text="Ducha rota, Lamparas no funcionan, el cliente nesecita la habitacion urgente arreglada" />
+				<Editor></Editor>
+
 
 				<Button Text="Crear orden"/>
 			</StackLayout>

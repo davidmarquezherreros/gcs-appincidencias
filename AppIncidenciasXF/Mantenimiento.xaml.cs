@@ -8,11 +8,11 @@ namespace AppIncidenciasXF
 {
 	public partial class Mantenimiento : ContentPage
 	{
-		public ObservableCollection<ElementsViewModel> elements { get; set; }
+		//public ObservableCollection<ElementsViewModel> elements { get; set; }
 		public Mantenimiento()
 		{
 			InitializeComponent();
-			elements = new ObservableCollection<ElementsViewModel>();
+			//elements = new ObservableCollection<ElementsViewModel>();
 			/*elements.Add(new ElementsViewModel
 
 			{
