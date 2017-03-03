@@ -14,7 +14,7 @@
 				<Button Text="Inventario" BackgroundColor="Yellow" Clicked="Handle_Clicked4"></Button>
 				<Button Text="Fichar" BackgroundColor="Yellow" Clicked="Handle_Clicked5"></Button>
 				<Button Text="Salir" BackgroundColor="Yellow" Clicked="Handle_Clicked6"></Button>
-				
+				<Button Text="Tareas Mantenimiento" BackgroundColor="Yellow" Clicked="Handle_Clicked7"></Button>
 			</StackLayout>
 		</ContentPage>
 		
