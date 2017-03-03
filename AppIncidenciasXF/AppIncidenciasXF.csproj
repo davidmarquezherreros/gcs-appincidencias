@@ -51,6 +51,9 @@
     <EmbeddedResource Include="InventarioMantenimiento.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetalleProducto.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -83,6 +86,9 @@
       <DependentUpon>InventarioMantenimiento.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\InventarioMantenimientoModel.cs" />
+    <Compile Include="DetalleProducto.xaml.cs">
+      <DependentUpon>DetalleProducto.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

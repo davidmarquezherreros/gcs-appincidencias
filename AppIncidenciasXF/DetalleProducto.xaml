@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppIncidenciasXF.DetalleProducto">
+	<ContentPage.Content>
+
+	   <ScrollView>
+
+		    <StackLayout Spacing="0" Padding="0" BackgroundColor="White">
+		      <Label Text="Detalle del producto E" FontSize="20" Style="{DynamicResource TitleStyle}"/>
+			    <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+		          <StackLayout Spacing="0" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
+				    <Image HeightRequest="50" WidthRequest="50" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Source = "https://xamarin.com/content/images/pages/forms/example-app.png" />
+				    <Label FontSize="30" TextColor="Black" Text="Cantidad 36" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+				</StackLayout>
+
+
+		        </StackLayout>
+		
+			 
+				<Label FontSize="20" TextColor="Black" Text="Descripcion tecnica del producto ........."/>
+				  
+				    						<Label FontSize="30" TextColor="Black" Text="Actualizar inventario" HorizontalOptions="Center"
+            VerticalOptions="Center" FontAttributes="Bold" Margin="20"/>
+				    
+					<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Yellow">
+	
+				          <StackLayout Spacing="0" BackgroundColor="Maroon" Orientation="Horizontal" HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand">
+						    <Image HeightRequest="40" WidthRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Source = "https://xamarin.com/content/images/pages/forms/example-app.png" />
+						    <Label FontSize="20" TextColor="Black" Text="Cantidad 36" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+							<Image HeightRequest="40" WidthRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Source = "https://xamarin.com/content/images/pages/forms/example-app.png" />
+						  </StackLayout>
+			        </StackLayout>
+				</StackLayout>
+		</ScrollView>
+		
+	</ContentPage.Content>
+</ContentPage>
+

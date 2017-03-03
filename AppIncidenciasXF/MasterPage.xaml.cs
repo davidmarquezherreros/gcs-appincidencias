@@ -55,5 +55,10 @@ namespace AppIncidenciasXF
 			//throw new NotImplementedException();
 			Detail = new NavigationPage(new InventarioMantenimiento());
 		}
+		void Handle_Clicked9(object sender, System.EventArgs e) // boton salir
+		{
+			//throw new NotImplementedException();
+			Detail = new NavigationPage(new DetalleProducto());
+		}
 	}
 }
