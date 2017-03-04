@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppIncidenciasXF.Limpieza">
+	<ContentPage.Content Margin="5,30,5,5">
+			<StackLayout>
+				<Label Text="Habitaciones a limpiar" FontSize="25"/>
+				<Button Text="Añadir"/>
+		       <ListView x:Name="LimpiezaListView">
+		          	<ListView.ItemTemplate>
+			           	<DataTemplate>
+							<ViewCell>
+							  <StackLayout Orientation="Vertical">
+									<Label Text="{Binding Nombre}" FontSize="15"/>
+									<Label Text="{Binding Detalle}"/>	
+							  </StackLayout>
+						    </ViewCell>		
+					    </DataTemplate>
+				    </ListView.ItemTemplate>			
+		     </ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

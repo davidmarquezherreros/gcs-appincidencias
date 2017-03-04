@@ -20,10 +20,15 @@ namespace AppIncidenciasXF
 			Detail = new NavigationPage(new Registro());
 		}
 
+		void Handle_Clicked1(object sender, System.EventArgs e) // Lanza la vista de login
+		{
+			Detail = new NavigationPage(new Login());
+		}
+
 		void Handle_Clicked2(object sender, System.EventArgs e) // Lanza la vista de limpieza
 		{
 			// De momento se carga la vista de alta orden limpieza cambiarla a la vista de limpieza cuando se haya creado
-			Detail = new NavigationPage(new AltaOrdenLimpieza());
+			Detail = new NavigationPage(new Limpieza());
 		}
 
 		void Handle_Clicked3(object sender, System.EventArgs e) // Lanza la vista de mantenimiento
@@ -59,6 +64,12 @@ namespace AppIncidenciasXF
 		{
 			//throw new NotImplementedException();
 			Detail = new NavigationPage(new DetalleProducto());
+		}
+
+		void Handle_Clicked10(object sender, System.EventArgs e) // boton inventario limpieza
+		{
+			//throw new NotImplementedException();
+			Detail = new NavigationPage(new InventarioLimpieza());
 		}
 	}
 }

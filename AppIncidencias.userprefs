@@ -5,16 +5,15 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF\DetalleProducto.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF\MasterPage.xaml.cs">
     <Files>
-      <File FileName="AppIncidenciasXF\DetalleProducto.xaml" Line="27" Column="45" />
-      <File FileName="AppIncidenciasXF\InventarioMantenimiento.xaml.cs" Line="15" Column="60" />
-      <File FileName="AppIncidenciasXF\InventarioMantenimiento.xaml" Line="7" Column="95" />
-      <File FileName="AppIncidenciasXF\MasterPage.xaml.cs" Line="51" Column="25" />
-      <File FileName="AppIncidenciasXF\MasterPage.xaml" Line="19" Column="86" />
-      <File FileName="AppIncidenciasXF\obj\Debug\AppIncidenciasXF.DetalleProducto.xaml.g.cs" Line="1" Column="1" />
-      <File FileName="AppIncidenciasXF\DetalleProducto.xaml.cs" Line="1" Column="1" />
-      <File FileName="AppIncidenciasXF\AltaOrdenLimpieza.xaml.cs" Line="11" Column="4" />
+      <File FileName="AppIncidenciasXF\ViewModels\InventarioLimpiezaModel.cs" Line="10" Column="4" />
+      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml" Line="7" Column="54" />
+      <File FileName="AppIncidenciasXF\Limpieza.xaml" Line="3" Column="40" />
+      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml.cs" Line="9" Column="3" />
+      <File FileName="AppIncidenciasXF\Limpieza.xaml.cs" Line="23" Column="6" />
+      <File FileName="AppIncidenciasXF\MasterPage.xaml" Line="21" Column="90" />
+      <File FileName="AppIncidenciasXF\MasterPage.xaml.cs" Line="69" Column="74" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

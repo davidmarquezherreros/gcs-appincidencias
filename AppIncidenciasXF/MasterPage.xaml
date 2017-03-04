@@ -3,21 +3,25 @@
 	>
 	<MasterDetailPage.Master>
 		<ContentPage BackgroundColor="Gray" Title="Master Page" Icon="menu-icon.png">
-			<StackLayout Orientation="Vertical" Margin="5,30,5,5">
-				<Label Text="Menu"/>
-				<ContentView Padding="10">
-					<Image Source="avatar.png" HeightRequest="50" WidthRequest="50"/>
-				</ContentView>
-				<Button Text="Registro" BackgroundColor="Yellow" Clicked="Handle_Clicked"></Button>
-				<Button Text="Limpieza" BackgroundColor="Yellow" Clicked="Handle_Clicked2"></Button>
-				<Button Text="Mantenimiento" BackgroundColor="Yellow" Clicked="Handle_Clicked3"></Button>
-				<Button Text="Inventario" BackgroundColor="Yellow" Clicked="Handle_Clicked4"></Button>
-				<Button Text="Fichar" BackgroundColor="Yellow" Clicked="Handle_Clicked5"></Button>
-				<Button Text="Salir" BackgroundColor="Yellow" Clicked="Handle_Clicked6"></Button>
-				<Button Text="Tareas Mantenimiento" BackgroundColor="Yellow" Clicked="Handle_Clicked7"></Button>
-				<Button Text="Inventario Mantenimeinto" BackgroundColor="Yellow" Clicked="Handle_Clicked8"></Button>
-				<Button Text="Detalle Producto" BackgroundColor="Yellow" Clicked="Handle_Clicked9"></Button>
-			</StackLayout>
+			<ScrollView>
+				<StackLayout Orientation="Vertical" Margin="5,30,5,5">
+					<Label Text="Menu"/>
+					<ContentView Padding="10">
+						<Image Source="avatar.png" HeightRequest="50" WidthRequest="50"/>
+					</ContentView>
+					<Button Text="Registro" BackgroundColor="Yellow" Clicked="Handle_Clicked"></Button>
+					<Button Text="Login" BackgroundColor="Yellow" Clicked="Handle_Clicked1"></Button>
+					<Button Text="Limpieza" BackgroundColor="Yellow" Clicked="Handle_Clicked2"></Button>
+					<Button Text="Mantenimiento" BackgroundColor="Yellow" Clicked="Handle_Clicked3"></Button>
+					<Button Text="Inventario" BackgroundColor="Yellow" Clicked="Handle_Clicked4"></Button>
+					<Button Text="Fichar" BackgroundColor="Yellow" Clicked="Handle_Clicked5"></Button>
+					<Button Text="Salir" BackgroundColor="Yellow" Clicked="Handle_Clicked6"></Button>
+					<Button Text="Tareas Mantenimiento" BackgroundColor="Yellow" Clicked="Handle_Clicked7"></Button>
+					<Button Text="Inventario Mantenimeinto" BackgroundColor="Yellow" Clicked="Handle_Clicked8"></Button>
+					<Button Text="Detalle Producto" BackgroundColor="Yellow" Clicked="Handle_Clicked9"></Button>
+					<Button Text="Inventario limpieza" BackgroundColor="Yellow" Clicked="Handle_Clicked10"></Button>
+				</StackLayout>
+			</ScrollView>
 		</ContentPage>
 		
 	</MasterDetailPage.Master>

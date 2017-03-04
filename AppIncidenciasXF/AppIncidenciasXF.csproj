@@ -54,6 +54,12 @@
     <EmbeddedResource Include="DetalleProducto.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Limpieza.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventarioLimpieza.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -91,6 +97,14 @@
     <Compile Include="ViewModels\InventarioMantenimientoModel.cs" />
     <Compile Include="DetalleProducto.xaml.cs">
       <DependentUpon>DetalleProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Limpieza.xaml.cs">
+      <DependentUpon>Limpieza.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\LimpiezaViewModel.cs" />
+    <Compile Include="ViewModels\InventarioLimpiezaModel.cs" />
+    <Compile Include="InventarioLimpieza.xaml.cs">
+      <DependentUpon>InventarioLimpieza.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
