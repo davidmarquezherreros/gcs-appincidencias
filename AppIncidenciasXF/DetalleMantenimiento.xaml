@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppIncidenciasXF.DetalleMantenimiento">
+	<ContentPage.Content Margin="5,30,5,5">
+		<ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Detalle incidencia" FontSize="25"/>
+                <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="15" FontAttributes="Bold" XAlign="Center" TextColor="Black" Text="Planta: 2 - Bloque: 1 - Nº habitación: 1" />
+		        </StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="15" FontAttributes="Bold" TextColor="Black" Text="Habitación: Ver detalles" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+		        </StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="15" FontAttributes="Bold" TextColor="Black" Text="Observaciones: " HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+				</StackLayout>
+				<Label FontSize="15" TextColor="Black" Text="Pequeña fuga de agua en la ducha " HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="18" FontAttributes="Bold" TextColor="Black" Text="Encargado de limpieza actual: " HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+				</StackLayout>
+				<Label FontSize="20" XAlign="Center" TextColor="Black" Text="Juan Cortés Sánchez" />
+		    </StackLayout>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

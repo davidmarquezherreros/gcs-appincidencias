@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="AppIncidenciasXF.InventarioMantenimiento">
-	<ContentPage.Content>
+	<ContentPage.Content Margin="5,30,5,5">
 		<StackLayout>
-			<Label Text="Inventario Mantenimiento" FontSize="20" Style="{DynamicResource TitleStyle}"/>
-        <ListView x:Name="MantenimientoListView">
+			<Label Text="Inventario Mantenimiento" FontSize="25" Style="{DynamicResource TitleStyle}"/>
+			<Button Text="Añadir"/>
+        <ListView x:Name="MantenimientoListView" ItemSelected="Handle_ItemSelected">
           <ListView.ItemTemplate>
            <DataTemplate>
 			<ViewCell>

@@ -22,5 +22,10 @@ namespace AppIncidenciasXF
 				new InventarioLimpiezaModel {Nombre = "Habitación 8", Detalle = "Detalle de habitación 8"}
 			};
 		}
+
+		void Handle_ItemSelected(object sender, System.EventArgs e)
+		{
+			Navigation.PushAsync(new DetalleProducto());
+		}
 	}
 }

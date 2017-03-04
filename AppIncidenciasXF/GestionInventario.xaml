@@ -3,9 +3,9 @@
 	<ContentPage.Content>
 		<ScrollView Margin="5,30,5,5">
 			<StackLayout Padding="10">
-				<Label Text="Gestion del inventario" FontSize="25"/>
-				<Button Text="Limpieza" Clicked="Handle_Clicked2" Margin="10"/>
-				<Button Text="Mantenimiento" Clicked="Handle_Clicked" Margin="10"/>
+				<Label Text="Gestión del inventario" FontSize="25"/>
+				<Button Text="Limpieza" Clicked="Handle_Clicked" Margin="10"/>
+				<Button Text="Mantenimiento" Clicked="Handle_Clicked2" Margin="10"/>
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>

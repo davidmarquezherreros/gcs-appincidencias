@@ -5,15 +5,21 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF\MasterPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF\InventarioMantenimiento.xaml">
     <Files>
-      <File FileName="AppIncidenciasXF\ViewModels\InventarioLimpiezaModel.cs" Line="10" Column="4" />
-      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml" Line="7" Column="54" />
-      <File FileName="AppIncidenciasXF\Limpieza.xaml" Line="3" Column="40" />
-      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml.cs" Line="9" Column="3" />
-      <File FileName="AppIncidenciasXF\Limpieza.xaml.cs" Line="23" Column="6" />
-      <File FileName="AppIncidenciasXF\MasterPage.xaml" Line="21" Column="90" />
-      <File FileName="AppIncidenciasXF\MasterPage.xaml.cs" Line="69" Column="74" />
+      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml" Line="7" Column="90" />
+      <File FileName="AppIncidenciasXF\InventarioMantenimiento.xaml" Line="3" Column="2" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\Limpieza.xaml" Line="7" Column="80" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\Limpieza.xaml.cs" Line="13" Column="4" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\InventarioMantenimiento.xaml.cs" Line="31" Column="4" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml.cs" Line="29" Column="4" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\MasterPage.xaml" Line="19" Column="1" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\MasterPage.xaml.cs" Line="52" Column="4" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\Mantenimiento.xaml" Line="9" Column="75" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\Mantenimiento.xaml.cs" Line="12" Column="4" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\GestionInventario.xaml.cs" Line="22" Column="33" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\GestionInventario.xaml" Line="7" Column="52" NotebookId="1" />
+      <File FileName="AppIncidenciasXF\obj\Debug\AppIncidenciasXF.InventarioMantenimiento.xaml.g.cs" Line="23" Column="45" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

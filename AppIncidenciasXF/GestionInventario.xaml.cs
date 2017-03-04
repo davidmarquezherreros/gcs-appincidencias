@@ -14,12 +14,12 @@ namespace AppIncidenciasXF
 
 		void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			throw new NotImplementedException();
+			Navigation.PushAsync(new InventarioLimpieza());
 		}
 
 		void Handle_Clicked2(object sender, System.EventArgs e)
 		{
-			throw new NotImplementedException();
+			Navigation.PushAsync(new InventarioMantenimiento());
 		}
 	}
 }

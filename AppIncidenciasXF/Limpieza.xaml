@@ -3,8 +3,8 @@
 	<ContentPage.Content Margin="5,30,5,5">
 			<StackLayout>
 				<Label Text="Habitaciones a limpiar" FontSize="25"/>
-				<Button Text="Añadir"/>
-		       <ListView x:Name="LimpiezaListView">
+				<Button Text="Añadir" Clicked="anyadirOrdenLimpieza"/>
+		       <ListView x:Name="LimpiezaListView" ItemSelected="Handle_ItemSelected">
 		          	<ListView.ItemTemplate>
 			           	<DataTemplate>
 							<ViewCell>

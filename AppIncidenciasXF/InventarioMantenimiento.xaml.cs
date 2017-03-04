@@ -7,6 +7,7 @@ namespace AppIncidenciasXF
 {
 	public partial class InventarioMantenimiento : ContentPage
 	{
+
 		public InventarioMantenimiento()
 		{
 			InitializeComponent();
@@ -23,5 +24,12 @@ namespace AppIncidenciasXF
 
 			};
 		}
+
+		void Handle_ItemSelected(object sender, System.EventArgs e)
+		{
+			Navigation.PushAsync(new DetalleProducto());
+		}
+
+
 	}
 }

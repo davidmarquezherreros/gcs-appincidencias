@@ -5,7 +5,8 @@
 	<ContentPage.Content>
 	 <StackLayout>
 		<Label Text="Tareas Mantenimiento" FontSize="20" Style="{DynamicResource TitleStyle}"/>
-        <ListView x:Name="MainListView">
+		<Button Text="Añadir" Clicked="anyadirIncidenciaMantenimiento" />
+        <ListView x:Name="MainListView" ItemSelected="Handle_ItemSelected">
           <ListView.ItemTemplate>
            <DataTemplate>
 			<ViewCell>

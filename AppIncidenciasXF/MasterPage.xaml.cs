@@ -33,7 +33,7 @@ namespace AppIncidenciasXF
 
 		void Handle_Clicked3(object sender, System.EventArgs e) // Lanza la vista de mantenimiento
 		{
-			Detail = new NavigationPage(new AltaOrdenMantenimiento());
+			Detail = new NavigationPage(new Mantenimiento());
 		}
 
 		void Handle_Clicked4(object sender, System.EventArgs e) // Lanza la vista de inventario
@@ -49,27 +49,6 @@ namespace AppIncidenciasXF
 		void Handle_Clicked6(object sender, System.EventArgs e) // boton salir
 		{
 			throw new NotImplementedException();
-		}
-		void Handle_Clicked7(object sender, System.EventArgs e) // boton salir
-		{
-			//throw new NotImplementedException();
-			Detail = new NavigationPage(new Mantenimiento());
-		}
-		void Handle_Clicked8(object sender, System.EventArgs e) // boton salir
-		{
-			//throw new NotImplementedException();
-			Detail = new NavigationPage(new InventarioMantenimiento());
-		}
-		void Handle_Clicked9(object sender, System.EventArgs e) // boton salir
-		{
-			//throw new NotImplementedException();
-			Detail = new NavigationPage(new DetalleProducto());
-		}
-
-		void Handle_Clicked10(object sender, System.EventArgs e) // boton inventario limpieza
-		{
-			//throw new NotImplementedException();
-			Detail = new NavigationPage(new InventarioLimpieza());
 		}
 	}
 }

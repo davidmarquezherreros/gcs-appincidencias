@@ -7,6 +7,11 @@ namespace AppIncidenciasXF
 {
 	public partial class Limpieza : ContentPage
 	{
+		void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+		{
+			//Navigation.PushAsync(new DetalleHabitacion()); //HABILITAR CUANDO ESTE DetalleHabitacion
+		}
+
 		public Limpieza()
 		{
 			InitializeComponent();
@@ -22,6 +27,11 @@ namespace AppIncidenciasXF
 				new LimpiezaViewModel {Nombre = "Habitación 8", Detalle = "Detalle de habitación 8"}
 			};
 
+		}
+
+		void anyadirOrdenLimpieza(object sender, System.EventArgs e)
+		{
+			Navigation.PushAsync(new AltaOrdenLimpieza());
 		}
 	}
 }

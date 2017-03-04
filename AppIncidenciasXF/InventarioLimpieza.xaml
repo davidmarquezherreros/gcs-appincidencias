@@ -4,7 +4,7 @@
 		<StackLayout>
 				<Label Text="Inventario Limpieza" FontSize="25"/>
 				<Button Text="Añadir"/>
-		       <ListView x:Name="InventarioLimpiezaListView">
+		       <ListView x:Name="InventarioLimpiezaListView" ItemSelected="Handle_ItemSelected">
 		          	<ListView.ItemTemplate>
 			           	<DataTemplate>
 							<ViewCell>
