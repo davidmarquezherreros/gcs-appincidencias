@@ -4,24 +4,20 @@
 
 	   <ScrollView>
 
-		    <StackLayout Spacing="0" Padding="0" BackgroundColor="White">
-		      <Label Text="Detalle del producto E" FontSize="20" Style="{DynamicResource TitleStyle}"/>
-			    <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
-		          <StackLayout Spacing="0" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
-				    <Image HeightRequest="50" WidthRequest="50" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Source = "https://xamarin.com/content/images/pages/forms/example-app.png" />
-				    <Label FontSize="30" TextColor="Black" Text="Cantidad 36" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+		    <StackLayout Spacing="0" Padding="0" >
+		      <Label Margin="20, 0, 0, 0" Text="Detalle del producto E" FontSize="25" Style="{DynamicResource TitleStyle}"/>
+			    <StackLayout Margin="0, 20, 0, 0" Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+		          <StackLayout  Spacing="0" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
+				    <Image Margin="20, 0, 0, 0" HeightRequest="50" WidthRequest="50" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Source = "https://xamarin.com/content/images/pages/forms/example-app.png" />
+				    <Label Margin="40, 0, 0, 0" FontSize="30" TextColor="Black" Text="Cantidad 36" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
 				</StackLayout>
-
-
-		        </StackLayout>
-		
-			 
-				<Label FontSize="20" TextColor="Black" Text="Descripcion tecnica del producto ........."/>
+		        </StackLayout>		 
+				<Label Margin="20, 20, 0, 0" FontSize="20" TextColor="Black" Text="Descripcion tecnica del producto ........."/>
 				  
 				    						<Label FontSize="30" TextColor="Black" Text="Actualizar inventario" HorizontalOptions="Center"
             VerticalOptions="Center" FontAttributes="Bold" Margin="20"/>
 				    
-					<StackLayout Orientation="Horizontal" HeightRequest="50">
+					<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White">
 	
 				          <StackLayout Margin="80, 0, 0, 0"  Orientation="Horizontal" HorizontalOptions="Center"
             VerticalOptions="CenterAndExpand" >
