@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppIncidenciasXF.DetalleHabitacion">
+	<ContentPage.Content>
+		<ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Detalle habitacion" FontSize="25"/>
+                <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="15" FontAttributes="Bold" XAlign="Center" TextColor="Black" Text="Planta: 2 - Bloque: 1 - Nº habitación: 1" />
+		        </StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="15" FontAttributes="Bold" TextColor="Black" Text="Tamaño: 25m" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+		        </StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="15" FontAttributes="Bold" TextColor="Black" Text="Tipo: Individual" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+		        </StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="15" FontAttributes="Bold" TextColor="Black" Text="Situacion: Ocupada" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+		        </StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="15" FontAttributes="Bold" TextColor="Black" Text="Horario: Viernes, 9:00 a 11:00" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+					    <Label FontSize="18" FontAttributes="Bold" TextColor="Black" Text="Encargado de limpieza actual: " HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+				</StackLayout>
+				<Label FontSize="20" XAlign="Center" TextColor="Black" Text="Juan Cortés Sánchez" />
+		    </StackLayout>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

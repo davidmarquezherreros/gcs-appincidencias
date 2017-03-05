@@ -9,7 +9,7 @@ namespace AppIncidenciasXF
 	{
 		void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
 		{
-			//Navigation.PushAsync(new DetalleHabitacion()); //HABILITAR CUANDO ESTE DetalleHabitacion
+			Navigation.PushAsync(new DetalleHabitacion());
 		}
 
 		public Limpieza()

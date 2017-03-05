@@ -63,6 +63,9 @@
     <EmbeddedResource Include="DetalleMantenimiento.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetalleHabitacion.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -111,6 +114,9 @@
     </Compile>
     <Compile Include="DetalleMantenimiento.xaml.cs">
       <DependentUpon>DetalleMantenimiento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleHabitacion.xaml.cs">
+      <DependentUpon>DetalleHabitacion.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -12,6 +12,14 @@
 				<Label Text="Email" FontSize="15"/><Entry Placeholder="Introduzca su email" FontSize="15"/>
 				<Label Text="Contraseña" FontSize="15"/><Entry Placeholder="Introduzca su contraseña" FontSize="15" IsPassword="true"/>
 				<Label Text="Telefono" FontSize="15"/><Entry Placeholder="Introduzca su telefono" FontSize="15"/>
+				<Picker Title="Tipo de usuario:">
+					<Picker.Items>
+						<x:String>Conserje</x:String>
+				        <x:String>Mantenimiento</x:String>
+				        <x:String>Limpieza</x:String>
+				        <x:String>Admin</x:String>
+					</Picker.Items>
+				</Picker>
 				<Button Text="Registrarse"/>
 			</StackLayout>
 

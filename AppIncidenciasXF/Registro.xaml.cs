@@ -9,6 +9,9 @@ namespace AppIncidenciasXF
 	{
 		public Registro()
 		{
+			NavigationPage.SetBackButtonTitle(this, "Volver");
+			NavigationPage.SetHasBackButton(this, true);
+			NavigationPage.SetHasNavigationBar(this, true);
 			InitializeComponent();
 		}
 	}
