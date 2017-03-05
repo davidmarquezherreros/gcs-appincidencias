@@ -21,10 +21,10 @@
 				    						<Label FontSize="30" TextColor="Black" Text="Actualizar inventario" HorizontalOptions="Center"
             VerticalOptions="Center" FontAttributes="Bold" Margin="20"/>
 				    
-					<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Yellow">
+					<StackLayout Orientation="Horizontal" HeightRequest="50">
 	
-				          <StackLayout Spacing="0" BackgroundColor="Maroon" Orientation="Horizontal" HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand">
+				          <StackLayout Margin="80, 0, 0, 0"  Orientation="Horizontal" HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" >
 						    <Image HeightRequest="40" WidthRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Source = "https://xamarin.com/content/images/pages/forms/example-app.png" />
 						    <Label FontSize="20" TextColor="Black" Text="Cantidad 36" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
 							<Image HeightRequest="40" WidthRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Source = "https://xamarin.com/content/images/pages/forms/example-app.png" />
