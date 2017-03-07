@@ -16,5 +16,23 @@ namespace AppIncidenciasXF
         {
             InitializeComponent();
         }
+
+		async void Handle_Clicked(object sender, System.EventArgs e)
+		{
+			var usuario = new Usuario
+			{
+				Nick = "Nick",
+				Name = "Nombre",
+				Surname = "Apellido",
+				Email = "Email",
+				Password = "Password",
+				Type="Limpieza"
+			};
+
+			var secondPage = new Limpieza(usuario);
+			secondPage.BindingContext = usuario;
+			await Navigation.PushAsync(secondPage);
+
+		}
     }
 }

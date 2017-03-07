@@ -12,9 +12,16 @@ namespace AppIncidenciasXF
 			Navigation.PushAsync(new DetalleHabitacion());
 		}
 
+		public Limpieza(Usuario user)
+		{
+			InitializeComponent();
+			TituloLimpieza.Text = user.Name;
+		}
+
 		public Limpieza()
 		{
 			InitializeComponent();
+
 
 			LimpiezaListView.ItemsSource = new List<LimpiezaViewModel> {
 				new LimpiezaViewModel {Nombre = "Habitación 1", Detalle = "Detalle de habitación 1"},
