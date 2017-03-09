@@ -6,13 +6,13 @@
 		<ScrollView>
 			<StackLayout Padding="10">
 				<Label Text="Registro" FontSize="20"/>
-				<Label Text="Nick" FontSize="15"/><Entry Placeholder="Introduzca su nick" FontSize="15"/>
-				<Label Text="Nombre" FontSize="15"/><Entry Placeholder="Introduzca su nombre" FontSize="15" />
-				<Label Text="Apellidos" FontSize="15"/><Entry Placeholder="Introduzca sus apellidos" FontSize="15"/>
-				<Label Text="Email" FontSize="15"/><Entry Placeholder="Introduzca su email" FontSize="15"/>
-				<Label Text="Contraseña" FontSize="15"/><Entry Placeholder="Introduzca su contraseña" FontSize="15" IsPassword="true"/>
-				<Label Text="Telefono" FontSize="15"/><Entry Placeholder="Introduzca su telefono" FontSize="15"/>
-				<Picker Title="Tipo de usuario:">
+				<Label Text="Nick" FontSize="15"/><Entry Placeholder="Introduzca su nick" FontSize="15" x:Name="EntryNick"/>
+				<Label Text="Nombre" FontSize="15"/><Entry Placeholder="Introduzca su nombre" FontSize="15" x:Name="EntryNombre"/>
+				<Label Text="Apellidos" FontSize="15"/><Entry Placeholder="Introduzca sus apellidos" FontSize="15" x:Name="EntryApellidos"/>
+				<Label Text="Email" FontSize="15"/><Entry Placeholder="Introduzca su email" FontSize="15" x:Name="EntryEmail"/>
+				<Label Text="Contraseña" FontSize="15"/><Entry Placeholder="Introduzca su contraseña" FontSize="15" IsPassword="true" x:Name="EntryPassword"/>
+				<Label Text="Telefono" FontSize="15"/><Entry Placeholder="Introduzca su telefono" FontSize="15" x:Name="EntryTelefono"/>
+				<Picker Title="Tipo de usuario:" x:Name="PickerType">
 					<Picker.Items>
 						<x:String>Conserje</x:String>
 				        <x:String>Mantenimiento</x:String>
@@ -20,7 +20,7 @@
 				        <x:String>Admin</x:String>
 					</Picker.Items>
 				</Picker>
-				<Button Text="Registrarse"/>
+				<Button Text="Registrarse" Clicked="Handle_Clicked"/>
 			</StackLayout>
 
 		</ScrollView>

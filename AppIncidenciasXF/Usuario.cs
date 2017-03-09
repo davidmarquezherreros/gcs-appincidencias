@@ -21,6 +21,8 @@ namespace AppIncidenciasXF
 
 		public string PhoneNumber { get; set; }
 
+		public Habitacion[] habitaciones;
+
 		public override string ToString()
 		{
 			return Name;
