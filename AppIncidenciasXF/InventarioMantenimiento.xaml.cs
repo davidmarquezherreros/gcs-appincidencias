@@ -24,7 +24,11 @@ namespace AppIncidenciasXF
 
 			};
 		}
+		public InventarioMantenimiento(Usuario u)
+		{
+			InitializeComponent();
 
+		}
 		void Handle_ItemSelected(object sender, System.EventArgs e)
 		{
 			Navigation.PushAsync(new DetalleProducto());

@@ -22,6 +22,10 @@ namespace AppIncidenciasXF
 				new InventarioLimpiezaModel {Nombre = "Habitación 8", Detalle = "Detalle de habitación 8"}
 			};
 		}
+		public InventarioLimpieza(Usuario u)
+		{
+			InitializeComponent();
+		}
 
 		void Handle_ItemSelected(object sender, System.EventArgs e)
 		{
