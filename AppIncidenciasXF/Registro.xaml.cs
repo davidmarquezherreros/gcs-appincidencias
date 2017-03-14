@@ -23,7 +23,7 @@ namespace AppIncidenciasXF
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
 			Boolean ok = true;
-			if (EntryNick.Text == null || EntryNombre.Text == null || EntryApellidos.Text == null || EntryEmail.Text == null || EntryPassword.Text == null || EntryTelefono.Text == null || PickerType.SelectedIndex!=-1)
+			if (EntryNick.Text == null || EntryNombre.Text == null || EntryApellidos.Text == null || EntryEmail.Text == null || EntryPassword.Text == null || EntryTelefono.Text == null || PickerType.SelectedIndex==-1)
 			{
 				Device.BeginInvokeOnMainThread(() =>
 				{
