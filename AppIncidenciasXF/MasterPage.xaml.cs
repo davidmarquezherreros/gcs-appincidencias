@@ -7,13 +7,12 @@ namespace AppIncidenciasXF
 {
 	public partial class MasterPage : MasterDetailPage
 	{
-
+		public Usuario user;
 		public MasterPage()
 		{
 			InitializeComponent();
 			// Poner la pagina home aqui
 			Detail = new NavigationPage(new Registro()); // Esta vista es la que se carga por defecto
-
 		}
 		void Handle_Clicked(object sender, System.EventArgs e) // Lanza la vista de registro
 		{
@@ -28,7 +27,7 @@ namespace AppIncidenciasXF
 		void Handle_Clicked2(object sender, System.EventArgs e) // Lanza la vista de limpieza
 		{
 			// De momento se carga la vista de alta orden limpieza cambiarla a la vista de limpieza cuando se haya creado
-			Detail = new NavigationPage(new Limpieza());
+			Detail = new NavigationPage(new Limpieza(user));
 		}
 
 		void Handle_Clicked3(object sender, System.EventArgs e) // Lanza la vista de mantenimiento
