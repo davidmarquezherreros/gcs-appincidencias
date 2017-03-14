@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace AppIncidenciasXF
 {
 	public class Habitacion
@@ -12,5 +12,10 @@ namespace AppIncidenciasXF
 		public string Horario { get; set; }
 
 		public string Encargado { get; set; }
+
+		public override string ToString()
+		{
+			return string.Format("[Habitacion: Nombre={0}, Horario={1}, Encargado={2}]", Nombre, Horario, Encargado);
+		}
 	}
 }

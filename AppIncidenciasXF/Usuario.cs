@@ -6,7 +6,7 @@ namespace AppIncidenciasXF
 		public int habitacion = 0;
 		public Usuario()
 		{
-			
+			habitaciones = new Habitacion[100];
 		}
 		public string Nick { get; set; }
 
