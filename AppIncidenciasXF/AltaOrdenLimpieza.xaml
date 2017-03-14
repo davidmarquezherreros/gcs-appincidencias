@@ -5,7 +5,7 @@
 			<StackLayout >
 				<Label Text="Alta orden limpieza" FontSize="25"/>
 				<Label Text="Habitacion:" FontSize="15"/>
-				<Picker Title="Elige una habitacion">
+				<Picker Title="Elige una habitacion" x:Name="pickerhabitaciones">
 					<Picker.Items>
 						<x:String>Habitacion 1</x:String>
 				        <x:String>Habitacion 2</x:String>
@@ -14,10 +14,10 @@
 					</Picker.Items>
 				</Picker>
 				<Label Text="Horario:" FontSize="15"/>
-				<DatePicker Format="dd/MM/yyyy"></DatePicker>
-				<TimePicker Format="HH:ss"></TimePicker>
+				<DatePicker Format="dd/MM/yyyy" x:Name="fecha"></DatePicker>
+				<TimePicker Format="HH:ss" x:Name="hora"></TimePicker>
 				<Label Text="Elige al encargado:" FontSize="15"/>
-				<Picker Title="Encargado:">
+				<Picker Title="Encargado:" x:Name="pickerencargado">
 					<Picker.Items>
 						<x:String>Encargado 1</x:String>
 				        <x:String>Encargado 2</x:String>
@@ -25,7 +25,7 @@
 				        <x:String>Encargado 4</x:String>
 					</Picker.Items>
 				</Picker>
-				<Button Text="Crear orden"/>
+				<Button Text="Crear orden" Clicked="Handle_Clicked"/>
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>

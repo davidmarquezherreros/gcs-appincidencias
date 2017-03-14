@@ -3,6 +3,7 @@ namespace AppIncidenciasXF
 {
 	public class Usuario
 	{
+		public int habitacion = 0;
 		public Usuario()
 		{
 			
@@ -21,7 +22,14 @@ namespace AppIncidenciasXF
 
 		public string PhoneNumber { get; set; }
 
-		public Habitacion[] habitaciones;
+		public Habitacion[] habitaciones { get; }
+
+		public void addHabitacion(Habitacion h)
+		{
+			habitaciones[habitacion] = h;
+			habitacion++;
+		}
+
 
 		public override string ToString()
 		{

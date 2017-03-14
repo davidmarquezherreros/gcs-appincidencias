@@ -3,6 +3,7 @@ namespace AppIncidenciasXF
 {
 	public class Habitacion
 	{
+		// Esta clase contiene los datos de las habitaciones a limpiar
 		public Habitacion()
 		{
 		}
@@ -10,6 +11,6 @@ namespace AppIncidenciasXF
 
 		public string Horario { get; set; }
 
-		public Usuario Encargado { get; set; }
+		public string Encargado { get; set; }
 	}
 }
