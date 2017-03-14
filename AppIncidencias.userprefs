@@ -6,15 +6,19 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF\AltaOrdenLimpieza.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF\Login.xaml.cs">
     <Files>
-      <File FileName="AppIncidenciasXF\Registro.xaml.cs" Line="46" Column="1" />
-      <File FileName="AppIncidenciasXF\Usuario.cs" Line="30" Column="17" />
-      <File FileName="AppIncidenciasXF\Login.xaml.cs" Line="29" Column="1" />
+      <File FileName="AppIncidenciasXF\Registro.xaml.cs" Line="1" Column="1" />
+      <File FileName="AppIncidenciasXF\Usuario.cs" Line="1" Column="1" />
+      <File FileName="AppIncidenciasXF\Login.xaml.cs" Line="11" Column="2" />
       <File FileName="iOS\Main.cs" Line="17" Column="1" />
-      <File FileName="AppIncidenciasXF\Limpieza.xaml.cs" Line="50" Column="57" />
-      <File FileName="AppIncidenciasXF\AltaOrdenLimpieza.xaml.cs" Line="21" Column="9" />
-      <File FileName="AppIncidenciasXF\Habitacion.cs" Line="12" Column="38" />
+      <File FileName="AppIncidenciasXF\Limpieza.xaml.cs" Line="1" Column="1" />
+      <File FileName="AppIncidenciasXF\AltaOrdenLimpieza.xaml.cs" Line="10" Column="19" />
+      <File FileName="AppIncidenciasXF\Habitacion.cs" Line="1" Column="1" />
+      <File FileName="AppIncidenciasXF\MasterPage.xaml.cs" Line="46" Column="1" />
+      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml" Line="1" Column="1" />
+      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml.cs" Line="9" Column="3" />
+      <File FileName="AppIncidenciasXF\Mantenimiento.xaml.cs" Line="7" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
