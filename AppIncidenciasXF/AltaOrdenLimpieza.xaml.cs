@@ -33,7 +33,7 @@ namespace AppIncidenciasXF
 			{
 				var orden = new Habitacion
 				{
-					Nombre = pickerhabitaciones.SelectedIndex.ToString(),
+					Nombre = pickerhabitaciones.Items[pickerhabitaciones.SelectedIndex],
 					Horario = fecha.Date.ToString()+" "+hora.Time.ToString(),
 					Encargado = pickerencargado.SelectedIndex.ToString(),
 				};

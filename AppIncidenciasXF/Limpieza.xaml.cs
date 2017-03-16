@@ -17,16 +17,26 @@ namespace AppIncidenciasXF
 		{
 			InitializeComponent();
 			usuario = user;
-			TituloLimpieza.Text = user.Name;
 			if (user.habitacion > 0)
 			{
-				LimpiezaListView.ItemsSource = new List<LimpiezaViewModel>
-				{
-					new LimpiezaViewModel {Nombre= user.habitaciones[0].Nombre, Detalle=user.habitaciones[0].Horario}
-				};
+				cargarHabitaciones();
+				if (usuario.habitaciones.Length == 0){
+					Device.BeginInvokeOnMainThread(() =>
+					{
+						DisplayAlert("Error", "Los campos no pueden estar vacios", "OK");
+					});
+				}
 			}
 		}
-
+		public void cargarHabitaciones()
+		{
+			List<LimpiezaViewModel> lista = new List<LimpiezaViewModel>();
+			for (int i = 0; i < usuario.habitacion; i++)
+			{
+				lista.Add(new LimpiezaViewModel { Nombre = usuario.habitaciones[i].Nombre, Detalle = usuario.habitaciones[i].Horario });
+			}
+			LimpiezaListView.ItemsSource = lista;
+		}
 		public Limpieza()
 		{
 			InitializeComponent();
