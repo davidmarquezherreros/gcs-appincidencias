@@ -20,12 +20,26 @@ namespace AppIncidenciasXF
 
 		void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			Navigation.PushAsync(new InventarioLimpieza(user));
+			if (user == null)
+			{
+				Navigation.PushAsync(new InventarioLimpieza());
+			}
+			else
+			{
+				Navigation.PushAsync(new InventarioLimpieza(user));
+			}
 		}
 
 		void Handle_Clicked2(object sender, System.EventArgs e)
 		{
-			Navigation.PushAsync(new InventarioMantenimiento(user));
+			if (user == null)
+			{
+				Navigation.PushAsync(new InventarioMantenimiento());
+			}
+			else
+			{
+				Navigation.PushAsync(new InventarioMantenimiento(user));
+			}
 		}
 	}
 }
