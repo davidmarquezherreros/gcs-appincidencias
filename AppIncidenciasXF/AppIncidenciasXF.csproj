@@ -119,7 +119,7 @@
       <DependentUpon>DetalleHabitacion.xaml</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
-    <Compile Include="Habitacion.cs" />
+    <Compile Include="HabitacionIncidencia.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -6,7 +6,7 @@ namespace AppIncidenciasXF
 		public int habitacion = 0;
 		public Usuario()
 		{
-			habitaciones = new Habitacion[100];
+			habitaciones = new HabitacionIncidencia[100];
 		}
 		public string Nick { get; set; }
 
@@ -22,9 +22,9 @@ namespace AppIncidenciasXF
 
 		public string PhoneNumber { get; set; }
 
-		public Habitacion[] habitaciones { get; }
+		public HabitacionIncidencia[] habitaciones { get; }
 
-		public void addHabitacion(Habitacion h)
+		public void addHabitacion(HabitacionIncidencia h)
 		{
 			habitaciones[habitacion] = h;
 			habitacion++;

@@ -1,10 +1,10 @@
 using System;
 namespace AppIncidenciasXF
 {
-	public class Habitacion
+	public class HabitacionIncidencia
 	{
 		// Esta clase contiene los datos de las habitaciones a limpiar
-		public Habitacion()
+		public HabitacionIncidencia()
 		{
 		}
 		public string Nombre { get; set; }
@@ -13,9 +13,11 @@ namespace AppIncidenciasXF
 
 		public string Encargado { get; set; }
 
+		public string Detalle { get; set; }
+
 		public override string ToString()
 		{
-			return string.Format("[Habitacion: Nombre={0}, Horario={1}, Encargado={2}]", Nombre, Horario, Encargado);
+			return string.Format("[HabitacionIncidencia: Nombre={0}, Detalle={1}, Horario={2}, Encargado={3}]", Nombre, Detalle, Horario, Encargado);
 		}
 	}
 }

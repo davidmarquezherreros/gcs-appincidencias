@@ -31,16 +31,21 @@ namespace AppIncidenciasXF
 			}
 			if (ok == true)
 			{
-				var orden = new Habitacion
+				var orden = new HabitacionIncidencia
 				{
 					Nombre = pickerhabitaciones.Items[pickerhabitaciones.SelectedIndex],
+					Detalle = "DETALLE SIN IMPLEMENTAR"+pickerhabitaciones.Items[pickerhabitaciones.SelectedIndex],
 					Horario = fecha.Date.ToString()+" "+hora.Time.ToString(),
-					Encargado = pickerencargado.SelectedIndex.ToString(),
+					Encargado = pickerencargado.Items[pickerencargado.SelectedIndex],
 				};
-				usuario.addHabitacion(orden);
+				Device.BeginInvokeOnMainThread(() =>
+				{
+					DisplayAlert("Error", orden.Nombre + " "+orden.Detalle+" "+ orden.Horario+" "+ orden.Encargado, "OK");
+				});
+				/*usuario.addHabitacion(orden);
 				var secondPage = new Limpieza(usuario);
 				secondPage.BindingContext = usuario;
-				await Navigation.PushAsync(secondPage);
+				await Navigation.PushAsync(secondPage);*/
 			}
 		}
 	}

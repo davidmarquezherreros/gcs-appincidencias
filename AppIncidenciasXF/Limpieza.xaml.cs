@@ -10,7 +10,14 @@ namespace AppIncidenciasXF
 		Usuario usuario;
 		void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
 		{
-			Navigation.PushAsync(new DetalleHabitacion());
+			if (usuario == null)
+			{
+				Navigation.PushAsync(new DetalleHabitacion());
+			}
+			else {
+				Navigation.PushAsync(new DetalleHabitacion(e.SelectedItem,usuario));
+			}
+
 		}
 
 		public Limpieza(Usuario user)
@@ -30,10 +37,10 @@ namespace AppIncidenciasXF
 		}
 		public void cargarHabitaciones()
 		{
-			List<LimpiezaViewModel> lista = new List<LimpiezaViewModel>();
+			List<HabitacionIncidencia> lista = new List<HabitacionIncidencia>();
 			for (int i = 0; i < usuario.habitacion; i++)
 			{
-				lista.Add(new LimpiezaViewModel { Nombre = usuario.habitaciones[i].Nombre, Detalle = usuario.habitaciones[i].Horario });
+				lista.Add(new HabitacionIncidencia { Nombre = usuario.habitaciones[i].Nombre, Detalle = usuario.habitaciones[i].Horario });
 			}
 			LimpiezaListView.ItemsSource = lista;
 		}
@@ -42,15 +49,15 @@ namespace AppIncidenciasXF
 			InitializeComponent();
 
 
-			LimpiezaListView.ItemsSource = new List<LimpiezaViewModel> {
-				new LimpiezaViewModel {Nombre = "Habitación 1", Detalle = "Detalle de habitación 1"},
-				new LimpiezaViewModel {Nombre = "Habitación 2", Detalle = "Detalle de habitación 2"},
-				new LimpiezaViewModel {Nombre = "Habitación 3", Detalle = "Detalle de habitación 3"},
-				new LimpiezaViewModel {Nombre = "Habitación 4", Detalle = "Detalle de habitación 4"},
-				new LimpiezaViewModel {Nombre = "Habitación 5", Detalle = "Detalle de habitación 5"},
-				new LimpiezaViewModel {Nombre = "Habitación 6", Detalle = "Detalle de habitación 6"},
-				new LimpiezaViewModel {Nombre = "Habitación 7", Detalle = "Detalle de habitación 7"},
-				new LimpiezaViewModel {Nombre = "Habitación 8", Detalle = "Detalle de habitación 8"}
+			LimpiezaListView.ItemsSource = new List<HabitacionIncidencia> {
+				new HabitacionIncidencia {Nombre = "Habitación 1", Detalle = "Detalle de habitación 1"},
+				new HabitacionIncidencia {Nombre = "Habitación 2", Detalle = "Detalle de habitación 2"},
+				new HabitacionIncidencia {Nombre = "Habitación 3", Detalle = "Detalle de habitación 3"},
+				new HabitacionIncidencia {Nombre = "Habitación 4", Detalle = "Detalle de habitación 4"},
+				new HabitacionIncidencia {Nombre = "Habitación 5", Detalle = "Detalle de habitación 5"},
+				new HabitacionIncidencia {Nombre = "Habitación 6", Detalle = "Detalle de habitación 6"},
+				new HabitacionIncidencia {Nombre = "Habitación 7", Detalle = "Detalle de habitación 7"},
+				new HabitacionIncidencia {Nombre = "Habitación 8", Detalle = "Detalle de habitación 8"}
 			};
 
 		}
