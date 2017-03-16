@@ -24,7 +24,7 @@ namespace AppIncidenciasXF
 
 		public HabitacionIncidencia[] habitaciones { get; }
 
-		public void addHabitacion(HabitacionIncidencia h)
+		public void addHabitacionIncidencia(HabitacionIncidencia h)
 		{
 			habitaciones[habitacion] = h;
 			habitacion++;

@@ -38,14 +38,10 @@ namespace AppIncidenciasXF
 					Horario = fecha.Date.ToString()+" "+hora.Time.ToString(),
 					Encargado = pickerencargado.Items[pickerencargado.SelectedIndex],
 				};
-				Device.BeginInvokeOnMainThread(() =>
-				{
-					DisplayAlert("Error", orden.Nombre + " "+orden.Detalle+" "+ orden.Horario+" "+ orden.Encargado, "OK");
-				});
-				/*usuario.addHabitacion(orden);
+				usuario.addHabitacionIncidencia(orden);
 				var secondPage = new Limpieza(usuario);
 				secondPage.BindingContext = usuario;
-				await Navigation.PushAsync(secondPage);*/
+				await Navigation.PushAsync(secondPage);
 			}
 		}
 	}
