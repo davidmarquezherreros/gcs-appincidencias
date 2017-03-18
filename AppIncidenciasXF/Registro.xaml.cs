@@ -49,7 +49,7 @@ namespace AppIncidenciasXF
 					{
 						Device.BeginInvokeOnMainThread(() =>
 						{
-							DisplayAlert("Error", "El email introducido no es valido", "OK");
+							DisplayAlert("Error", "El email introducido no es válido", "OK");
 						});
 						ok = false;
 					}

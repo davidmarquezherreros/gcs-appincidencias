@@ -11,6 +11,8 @@ namespace AppIncidenciasXF
 		public MasterPage()
 		{
 			InitializeComponent();
+			ocultarMostrarBotonera();
+				
 			// Poner la pagina home aqui
 			Detail = new NavigationPage(new Registro()); // Esta vista es la que se carga por defecto
 		}
@@ -32,7 +34,7 @@ namespace AppIncidenciasXF
 
 		void Handle_Clicked3(object sender, System.EventArgs e) // Lanza la vista de mantenimiento
 		{
-			Detail = new NavigationPage(new Mantenimiento());
+			Detail = new NavigationPage(new Mantenimiento(user));
 		}
 
 		void Handle_Clicked4(object sender, System.EventArgs e) // Lanza la vista de inventario
@@ -47,7 +49,35 @@ namespace AppIncidenciasXF
 
 		void Handle_Clicked6(object sender, System.EventArgs e) // boton salir
 		{
-			throw new NotImplementedException();
+			user.Logueado = false;
+			ocultarMostrarBotonera();
+			Detail = new NavigationPage(new Login());
+		}
+
+		public void ocultarMostrarBotonera()
+		{
+			//Cuando está logueado el usuario
+			if (user != null && user.Logueado)
+			{
+				BtnLogin.IsVisible = false;
+				BtnRegistro.IsVisible = false;
+				BtnLimpieza.IsVisible = true;
+				BtnMantenimiento.IsVisible = true;
+				BtnInventario.IsVisible = true;
+				BtnFichar.IsVisible = true;
+				BtnSalir.IsVisible = true;
+			}
+			//Cuando no está logueado
+			else
+			{
+				BtnLogin.IsVisible = true;
+				BtnRegistro.IsVisible = true;
+				BtnLimpieza.IsVisible = false;
+				BtnMantenimiento.IsVisible = false;
+				BtnInventario.IsVisible = false;
+				BtnFichar.IsVisible = false;
+				BtnSalir.IsVisible = false;
+			}
 		}
 	}
 }

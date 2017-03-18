@@ -120,6 +120,7 @@
     </Compile>
     <Compile Include="Usuario.cs" />
     <Compile Include="HabitacionIncidencia.cs" />
+    <Compile Include="MantenimientoIncidencia.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

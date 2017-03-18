@@ -7,9 +7,9 @@
             <StackLayout Padding="10">
                 <Label Text="Inicio sesión" FontSize="20"/>
                 <Label Text="Nick" FontSize="15"/>
-                <Entry Placeholder="Introduzca su nick" FontSize="15"/>
+                <Entry Placeholder="Introduzca su nick" FontSize="15" x:Name="EntryNick"/>
                 <Label Text="Contraseña" FontSize="15"/>
-                <Entry Placeholder="Introduzca su contraseña" FontSize="15" IsPassword="true"/>
+                <Entry Placeholder="Introduzca su contraseña" FontSize="15" IsPassword="true" x:Name="EntryPassword"/>
                 <Button Text="Iniciar" Clicked="Handle_Clicked"/>
             </StackLayout>
         </ScrollView>

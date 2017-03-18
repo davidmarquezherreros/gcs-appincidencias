@@ -20,34 +20,9 @@ namespace AppIncidenciasXF
 
 		}
 
-		public Limpieza(Usuario user)
-		{
-			InitializeComponent();
-			usuario = user;
-			if (user.habitacion > 0)
-			{
-				cargarHabitaciones();
-				if (usuario.habitaciones.Length == 0){
-					Device.BeginInvokeOnMainThread(() =>
-					{
-						DisplayAlert("Error", "Los campos no pueden estar vacios", "OK");
-					});
-				}
-			}
-		}
-		public void cargarHabitaciones()
-		{
-			List<HabitacionIncidencia> lista = new List<HabitacionIncidencia>();
-			for (int i = 0; i < usuario.habitacion; i++)
-			{
-				lista.Add(new HabitacionIncidencia { Nombre = usuario.habitaciones[i].Nombre, Detalle = usuario.habitaciones[i].Horario });
-			}
-			LimpiezaListView.ItemsSource = lista;
-		}
 		public Limpieza()
 		{
 			InitializeComponent();
-
 
 			LimpiezaListView.ItemsSource = new List<HabitacionIncidencia> {
 				new HabitacionIncidencia {Nombre = "Habitación 1", Detalle = "Detalle de habitación 1"},
@@ -60,6 +35,31 @@ namespace AppIncidenciasXF
 				new HabitacionIncidencia {Nombre = "Habitación 8", Detalle = "Detalle de habitación 8"}
 			};
 
+		}
+
+		public Limpieza(Usuario user)
+		{
+			InitializeComponent();
+			usuario = user;
+			if (user.habitacion > 0)
+			{
+				cargarHabitaciones();
+				if (usuario.habitaciones.Length == 0){
+					Device.BeginInvokeOnMainThread(() =>
+					{
+						DisplayAlert("Error", "Los campos no pueden estar vacíos", "OK");
+					});
+				}
+			}
+		}
+		public void cargarHabitaciones()
+		{
+			List<HabitacionIncidencia> lista = new List<HabitacionIncidencia>();
+			for (int i = 0; i < usuario.habitacion; i++)
+			{
+				lista.Add(new HabitacionIncidencia { Nombre = usuario.habitaciones[i].Nombre, Detalle = usuario.habitaciones[i].Horario });
+			}
+			LimpiezaListView.ItemsSource = lista;
 		}
 
 		void anyadirOrdenLimpieza(object sender, System.EventArgs e)
