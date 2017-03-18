@@ -28,46 +28,55 @@ namespace AppIncidenciasXF
 			{
 				Device.BeginInvokeOnMainThread(() =>
 				{
-					DisplayAlert("Error", "Los campos no pueden estar vacios", "OK");
+					DisplayAlert("Error", "Los campos no pueden estar vacíos", "OK");
 				});
 				ok = false;
 			}
-			if (IsValidPhone(EntryTelefono.Text) == false)
+			//Si sigue siendo válido, comprobamos el teléfono
+			if (ok)
 			{
-				Device.BeginInvokeOnMainThread(() =>
+				if (this.IsValidPhone(EntryTelefono.Text) == false)
 				{
-					DisplayAlert("Error", "El numero de telefono introducido no es valido", "OK");
-				});
-				ok = false;
-			}
-			if (IsValidEmail(EntryEmail.Text) == false)
-			{
-				Device.BeginInvokeOnMainThread(() =>
-				{
-					DisplayAlert("Error", "El email introducido no es valido", "OK");
-				});
-				ok = false;
-			}
-			if (ok == true)
-			{
-				var usuario = new Usuario
-				{
-					Nick = EntryNick.Text,
-					Name = EntryNombre.Text,
-					Surname = EntryApellidos.Text,
-					Email = EntryEmail.Text,
-					Password = EntryPassword.Text,
-					Type = PickerType.SelectedIndex.ToString(),
-					PhoneNumber = EntryTelefono.Text
-				};
-				var secondPage = new Login(usuario);
-				secondPage.BindingContext = usuario;
-				await Navigation.PushAsync(secondPage);
+					Device.BeginInvokeOnMainThread(() =>
+					{
+						DisplayAlert("Error", "El número de telefono introducido no es válido", "OK");
+					});
+					ok = false;
+				}
+				//Si sigue siendo válido, comprobamos el email
+				if (ok) {
+					if (IsValidEmail(EntryEmail.Text) == false)
+					{
+						Device.BeginInvokeOnMainThread(() =>
+						{
+							DisplayAlert("Error", "El email introducido no es valido", "OK");
+						});
+						ok = false;
+					}
+
+					//Si es válido del todo
+					if (ok == true)
+					{
+						var usuario = new Usuario
+						{
+							Nick = EntryNick.Text,
+							Name = EntryNombre.Text,
+							Surname = EntryApellidos.Text,
+							Email = EntryEmail.Text,
+							Password = EntryPassword.Text,
+							Type = PickerType.SelectedIndex.ToString(),
+							PhoneNumber = EntryTelefono.Text
+						};
+						var secondPage = new Login(usuario);
+						secondPage.BindingContext = usuario;
+						await Navigation.PushAsync(secondPage);
+					}
+				}
 			}
 		}
-		private bool IsValidPhone(string phone)
+		public bool IsValidPhone(string phone)
 		{
-			return phone.Length==9;
+				return phone.Length==9;
 		}
 		public bool IsValidEmail(string emailaddress)
 		{
