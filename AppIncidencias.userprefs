@@ -6,7 +6,13 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF\Login.xaml.cs">
+    <Files>
+      <File FileName="AppIncidenciasXF\AltaOrdenLimpieza.xaml.cs" Line="1" Column="1" />
+      <File FileName="AppIncidenciasXF\Registro.xaml.cs" Line="26" Column="4" />
+      <File FileName="AppIncidenciasXF\Login.xaml.cs" Line="82" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.AppIncidenciasXF.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
 </Properties>
