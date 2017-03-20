@@ -66,6 +66,12 @@
     <EmbeddedResource Include="DetalleHabitacion.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="AltaProducto.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaProductoLimpieza.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -121,6 +127,13 @@
     <Compile Include="Usuario.cs" />
     <Compile Include="HabitacionIncidencia.cs" />
     <Compile Include="MantenimientoIncidencia.cs" />
+    <Compile Include="AltaProducto.xaml.cs">
+      <DependentUpon>AltaProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.cs" />
+    <Compile Include="AltaProductoLimpieza.xaml.cs">
+      <DependentUpon>AltaProductoLimpieza.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

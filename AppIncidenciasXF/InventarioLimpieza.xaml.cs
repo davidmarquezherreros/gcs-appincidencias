@@ -7,6 +7,7 @@ namespace AppIncidenciasXF
 {
 	public partial class InventarioLimpieza : ContentPage
 	{
+		Usuario usuario;
 		public InventarioLimpieza()
 		{
 			InitializeComponent();
@@ -23,13 +24,41 @@ namespace AppIncidenciasXF
 			};
 		}
 		public InventarioLimpieza(Usuario u)
+
 		{
 			InitializeComponent();
+			usuario = u;
+			if (usuario.proLimpieza > 0)
+			{
+				cargarProductos();
+				if (usuario.productosLimpieza.Length == 0)
+				{
+					Device.BeginInvokeOnMainThread(() =>
+					{
+						DisplayAlert("Error", "Los campos no pueden estar vacíos", "OK");
+					});
+				}
+			}
 		}
-
+		public void cargarProductos()
+		{
+			List<Producto> lista = new List<Producto>();
+			for (int i = 0; i < usuario.proLimpieza; i++)
+			{
+				lista.Add(new Producto { Nombre = usuario.productosLimpieza[i].Nombre, Cantidad = usuario.productosLimpieza[i].Cantidad, Descripcion = usuario.productosLimpieza[i].Descripcion });
+			}
+			InventarioLimpiezaListView.ItemsSource = lista;
+		}
 		void Handle_ItemSelected(object sender, System.EventArgs e)
 		{
+			//Usuario usuario;
+
 			Navigation.PushAsync(new DetalleProducto());
+		}
+
+		void anyadirProducto(object sender, System.EventArgs e)
+		{
+			Navigation.PushAsync(new AltaProductoLimpieza(usuario));
 		}
 	}
 }

@@ -3,14 +3,14 @@
 	<ContentPage.Content Margin="5,30,5,5">
 		<StackLayout>
 				<Label Text="Inventario Limpieza" FontSize="25"/>
-				<Button Text="Añadir"/>
+				<Button Text="Añadir"  Clicked="anyadirProducto"/>
 		       <ListView x:Name="InventarioLimpiezaListView" ItemSelected="Handle_ItemSelected">
 		          	<ListView.ItemTemplate>
 			           	<DataTemplate>
 							<ViewCell>
 							  <StackLayout Orientation="Vertical">
 									<Label Text="{Binding Nombre}" FontSize="15"/>
-									<Label Text="{Binding Detalle}"/>	
+									<Label Text="{Binding Cantidad}"/>	
 							  </StackLayout>
 						    </ViewCell>		
 					    </DataTemplate>

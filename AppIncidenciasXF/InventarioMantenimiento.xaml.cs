@@ -7,7 +7,7 @@ namespace AppIncidenciasXF
 {
 	public partial class InventarioMantenimiento : ContentPage
 	{
-
+		Usuario usuario;
 		public InventarioMantenimiento()
 		{
 			InitializeComponent();
@@ -27,11 +27,38 @@ namespace AppIncidenciasXF
 		public InventarioMantenimiento(Usuario u)
 		{
 			InitializeComponent();
-
+			usuario = u;
+			if (usuario.pro > 0)
+			{
+				cargarProductos();
+				if (usuario.productos.Length == 0)
+				{
+					Device.BeginInvokeOnMainThread(() =>
+					{
+						DisplayAlert("Error", "Los campos no pueden estar vacíos", "OK");
+					});
+				}
+			}
+		}
+		public void cargarProductos()
+		{
+			List<Producto> lista = new List<Producto>();
+			for (int i = 0; i < usuario.pro; i++)
+			{
+				lista.Add(new Producto{ Nombre = usuario.productos[i].Nombre, Cantidad = usuario.productos[i].Cantidad ,Descripcion =usuario.productos[i].Descripcion});
+			}
+			MantenimientoListView.ItemsSource = lista;
 		}
 		void Handle_ItemSelected(object sender, System.EventArgs e)
 		{
+			//Usuario usuario;
+
 			Navigation.PushAsync(new DetalleProducto());
+		}
+
+		void anyadirProducto(object sender, System.EventArgs e)
+		{
+			Navigation.PushAsync(new AltaProducto(usuario));
 		}
 
 

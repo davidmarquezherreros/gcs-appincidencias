@@ -5,14 +5,15 @@
 	<ContentPage.Content Margin="5,30,5,5">
 		<StackLayout>
 			<Label Text="Inventario Mantenimiento" FontSize="25" Style="{DynamicResource TitleStyle}"/>
-			<Button Text="Añadir"/>
+			<Button Text="Añadir" Clicked="anyadirProducto"/>
         <ListView x:Name="MantenimientoListView" ItemSelected="Handle_ItemSelected">
           <ListView.ItemTemplate>
            <DataTemplate>
 			<ViewCell>
 			  <StackLayout Orientation="Vertical">
-					<Label Text="{Binding Name}" FontSize="15"/>	
-					<Label Text="{Binding Detalle}"/>
+					<Label Text="{Binding Nombre}" FontSize="15"/>	
+					<Label Text="{Binding Cantidad}"/>
+								
 			  </StackLayout>
 						
 		    </ViewCell>		

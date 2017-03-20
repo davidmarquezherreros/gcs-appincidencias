@@ -5,10 +5,14 @@ namespace AppIncidenciasXF
 	{
 		public int habitacion = 0;
 		public int incidencia = 0;
+		public int pro = 0;
+		public int proLimpieza = 0;
 		public Usuario()
 		{
 			habitaciones = new HabitacionIncidencia[100];
 			incidencias = new MantenimientoIncidencia[100];
+			productos = new Producto[100];
+			productosLimpieza = new Producto[100];
 		}
 		public string Nick { get; set; }
 
@@ -29,6 +33,8 @@ namespace AppIncidenciasXF
 		public HabitacionIncidencia[] habitaciones { get; }
 
 		public MantenimientoIncidencia[] incidencias { get; }
+		public Producto[] productos { get; }
+		public Producto[] productosLimpieza { get; }
 
 		public void addHabitacionIncidencia(HabitacionIncidencia h)
 		{
@@ -40,6 +46,17 @@ namespace AppIncidenciasXF
 		{
 			incidencias[incidencia] = mi;
 			incidencia++;
+		}
+		public void addProductos(Producto p) {
+
+			productos[pro] = p;
+			pro++;
+		}
+		public void addProductosLimpieza(Producto p)
+		{
+
+			productosLimpieza[proLimpieza] = p;
+			proLimpieza++;
 		}
 
 

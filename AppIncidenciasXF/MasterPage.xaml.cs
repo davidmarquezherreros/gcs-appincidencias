@@ -39,7 +39,7 @@ namespace AppIncidenciasXF
 
 		void Handle_Clicked4(object sender, System.EventArgs e) // Lanza la vista de inventario
 		{
-			Detail = new NavigationPage(new GestionInventario());
+			Detail = new NavigationPage(new GestionInventario(user));
 		}
 
 		void Handle_Clicked5(object sender, System.EventArgs e) // boton fichar

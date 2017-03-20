@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppIncidenciasXF.AltaProducto">
+	<ContentPage.Content Margin="5,30,5,5">
+		<ScrollView Margin="5,30,5,5">
+			<StackLayout >
+			    <Label Text="Añyadir producto" FontSize="25"/>
+				<Label Text="Nombre Producto:" FontSize="15"/>
+				<Entry Placeholder="Introduzca nombre del producto" FontSize="15" x:Name="EntryProduct"/>
+				<Label Text="Cantidad:" FontSize="15"/>
+				<Entry Keyboard="Numeric" x:Name="EntryCantity"/>
+
+				<Label Text="Descripcion:" FontSize="15"/>
+				<Editor  x:Name="DescripcionProduct"/>
+				
+				<Button Text="Añyadir producto" Clicked="Handle_Clicked"/>
+		    </StackLayout>
+
+	   </ScrollView>
+	</ContentPage.Content>
+</ContentPage>
