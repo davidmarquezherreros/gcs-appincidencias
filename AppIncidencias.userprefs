@@ -1,39 +1,16 @@
 ﻿<Properties StartupConfiguration="{596DF6FE-D8EE-4E4F-9BF4-BE8D9626A7CB}|Default">
   <MonoDevelop.Ide.ItemProperties.AppIncidenciasXF.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF/DetalleHabitacion.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF/MasterPage.xaml.cs">
     <Files>
-      <File FileName="AppIncidenciasXF/AltaOrdenLimpieza.xaml.cs" Line="42" Column="16" />
-      <File FileName="AppIncidenciasXF/Limpieza.xaml.cs" Line="66" Column="4" />
-      <File FileName="AppIncidenciasXF/DetalleHabitacion.xaml.cs" Line="45" Column="9" />
+      <File FileName="AppIncidenciasXF/MasterPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="AppIncidenciasXF/Registro.xaml.cs" Line="29" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF\InventarioMantenimiento.xaml">
-    <Files>
-      <File FileName="AppIncidenciasXF\AltaOrdenLimpieza.xaml" Line="28" Column="58" />
-      <File FileName="AppIncidenciasXF\AltaProductoLimpieza.xaml.cs" Line="1" Column="1" />
-      <File FileName="AppIncidenciasXF\InventarioMantenimiento.xaml" Line="17" Column="3" />
-      <File FileName="AppIncidenciasXF\InventarioMantenimiento.xaml.cs" Line="52" Column="1" />
-      <File FileName="AppIncidenciasXF\Limpieza.xaml" Line="6" Column="57" />
-      <File FileName="AppIncidenciasXF\Limpieza.xaml.cs" Line="61" Column="5" />
-      <File FileName="AppIncidenciasXF\DetalleHabitacion.xaml.cs" Line="24" Column="4" />
-      <File FileName="AppIncidenciasXF\DetalleProducto.xaml" Line="30" Column="58" />
-      <File FileName="AppIncidenciasXF\DetalleProducto.xaml.cs" Line="23" Column="64" />
-      <File FileName="AppIncidenciasXF\DetalleHabitacion.xaml" Line="11" Column="150" />
-      <File FileName="AppIncidenciasXF\AltaProducto.xaml.cs" Line="24" Column="66" />
-      <File FileName="AppIncidenciasXF\AltaProducto.xaml" Line="13" Column="43" />
-      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml.cs" Line="56" Column="4" />
-      <File FileName="AppIncidenciasXF\InventarioLimpieza.xaml" Line="13" Column="10" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
-=======
-  <MonoDevelop.Ide.ItemProperties.AppIncidencias AndroidDesignerPreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.AppIncidencias PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
->>>>>>> 92045d69626c8f5cee8cca812638d64821afe7ff
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AppIncidenciasXF.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5709FCD2-29FE-435B-B301-0FB33AAB2EE8" />
 </Properties>

@@ -45,7 +45,10 @@ namespace AppIncidenciasXF
 
 		void Handle_Clicked5(object sender, System.EventArgs e) // boton fichar
 		{
-			throw new NotImplementedException();
+			Device.BeginInvokeOnMainThread(() =>
+			{
+				DisplayAlert("Aviso", "Esta funcionalidad se implementara mas adelante", "OK");
+			});
 		}
 
 		void Handle_Clicked6(object sender, System.EventArgs e) // boton salir
