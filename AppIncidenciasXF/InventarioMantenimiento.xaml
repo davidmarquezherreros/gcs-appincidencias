@@ -10,9 +10,10 @@
           <ListView.ItemTemplate>
            <DataTemplate>
 			<ViewCell>
-			  <StackLayout Orientation="Vertical">
+			  <StackLayout Orientation="Vertical" >
 					<Label Text="{Binding Nombre}" FontSize="15"/>	
 					<Label Text="{Binding Cantidad}"/>
+					<Label Text="{Binding Descripcion}"/>			
 								
 			  </StackLayout>
 						

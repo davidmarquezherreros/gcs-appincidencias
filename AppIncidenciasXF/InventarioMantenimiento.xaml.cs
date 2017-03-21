@@ -49,11 +49,10 @@ namespace AppIncidenciasXF
 			}
 			MantenimientoListView.ItemsSource = lista;
 		}
-		void Handle_ItemSelected(object sender, System.EventArgs e)
+		void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs  e)
 		{
-			//Usuario usuario;
 
-			Navigation.PushAsync(new DetalleProducto());
+			Navigation.PushAsync(new DetalleProducto(e.SelectedItem,usuario));
 		}
 
 		void anyadirProducto(object sender, System.EventArgs e)

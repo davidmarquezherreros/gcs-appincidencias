@@ -11,6 +11,7 @@
 							  <StackLayout Orientation="Vertical">
 									<Label Text="{Binding Nombre}" FontSize="15"/>
 									<Label Text="{Binding Cantidad}"/>	
+								    <Label Text="{Binding Descripcion}"/>
 							  </StackLayout>
 						    </ViewCell>		
 					    </DataTemplate>
