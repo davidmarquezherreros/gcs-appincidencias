@@ -23,7 +23,8 @@ namespace AppIncidenciasXF
 
 		void Handle_Clicked1(object sender, System.EventArgs e) // Lanza la vista de login
 		{
-			Detail = new NavigationPage(new Login());
+			if (user == null) { Detail = new NavigationPage(new Login()); }
+			else {Detail = new NavigationPage(new Login(user));  }
 		}
 
 		void Handle_Clicked2(object sender, System.EventArgs e) // Lanza la vista de limpieza
@@ -51,7 +52,7 @@ namespace AppIncidenciasXF
 		{
 			user.Logueado = false;
 			ocultarMostrarBotonera();
-			Detail = new NavigationPage(new Login());
+			Detail = new NavigationPage(new Login(user));
 		}
 
 		public void ocultarMostrarBotonera()

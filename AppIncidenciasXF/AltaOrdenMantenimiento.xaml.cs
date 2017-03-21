@@ -17,6 +17,12 @@ namespace AppIncidenciasXF
 		{
 			InitializeComponent();
 			usuario = user;
+			//Inicializamos el picker con las habitaciones disponibles
+			pickerhabitaciones.Items.Clear();
+			foreach (Habitacion habitacion in user.habitacionesDisponibles)
+			{
+				pickerhabitaciones.Items.Add(habitacion.Nombre);
+			}
 		}
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
@@ -36,7 +42,7 @@ namespace AppIncidenciasXF
 				var orden = new MantenimientoIncidencia
 				{
 					Nombre = pickerhabitaciones.Items[pickerhabitaciones.SelectedIndex],
-					Detalle = "DETALLE SIN IMPLEMENTAR" + pickerhabitaciones.Items[pickerhabitaciones.SelectedIndex],
+					Detalle = usuario.habitacionesDisponibles[pickerhabitaciones.SelectedIndex].Ubicacion,
 					Horario = fecha.Date.ToString() + " " + hora.Time.ToString(),
 					Encargado = pickerencargado.Items[pickerencargado.SelectedIndex],
 					Observaciones = observaciones.Text

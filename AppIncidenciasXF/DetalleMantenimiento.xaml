@@ -5,10 +5,10 @@
             <StackLayout Padding="10">
                 <Label Text="Detalle incidencia" FontSize="25"/>
                 <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
-					    <Label FontSize="15" FontAttributes="Bold" XAlign="Center" TextColor="Black" Text="Planta: 2 - Bloque: 1 - Nº habitación: 1" x:Name="LabelDetalle"/>
+					    <Label FontSize="15" FontAttributes="Bold" XAlign="Center" TextColor="Black" Text="" x:Name="LabelDetalle"/>
 		        </StackLayout>
 				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
-					    <Label FontSize="15" FontAttributes="Bold" TextColor="Black" Text="Habitación: Ver detalles" HorizontalOptions="StartAndExpand" VerticalOptions="Center" x:Name="LabelHabitacion"/>
+					    <Label FontSize="15" FontAttributes="Bold" TextColor="Black" Text="" HorizontalOptions="StartAndExpand" VerticalOptions="Center" x:Name="LabelHabitacion"/>
 		        </StackLayout>
 				<StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
 					    <Label FontSize="15" FontAttributes="Bold" TextColor="Black" Text="Observaciones: " HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
