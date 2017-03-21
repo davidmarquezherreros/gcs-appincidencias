@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppIncidenciasXF.AltaOrdenMantenimiento">
 	<ContentPage.Content Margin="5,30,5,5">
 		<ScrollView Margin="5,30,5,5">
@@ -19,10 +19,10 @@
 				<Label Text="Elige al encargado:" FontSize="15"/>
 				<Picker Title="Encargado:" x:Name="pickerencargado">
 					<Picker.Items>
-						<x:String>Encargado 1</x:String>
-				        <x:String>Encargado 2</x:String>
-				        <x:String>Encargado 3</x:String>
-				        <x:String>Encargado 4</x:String>
+						<x:String>David Márquez Herreros</x:String>
+				        <x:String>Chamit Ouadi</x:String>
+				        <x:String>Manuel Garcia Menarguez</x:String>
+				        <x:String>Jose Garcia Menarguez</x:String>
 					</Picker.Items>
 				</Picker>
 				<Label Text="Observaciones:" FontSize="15"/>

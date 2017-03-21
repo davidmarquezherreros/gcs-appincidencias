@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{596DF6FE-D8EE-4E4F-9BF4-BE8D9626A7CB}|Default">
   <MonoDevelop.Ide.ItemProperties.AppIncidenciasXF.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AppIncidenciasXF/MasterPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="AppIncidenciasXF/Usuario.cs" Line="25" Column="4" />
-      <File FileName="AppIncidenciasXF/MasterPage.xaml.cs" Line="54" Column="33" />
+      <File FileName="AppIncidenciasXF/Habitacion.cs" Line="14" Column="21" />
+      <File FileName="AppIncidenciasXF/Usuario.cs" Line="27" Column="164" />
+      <File FileName="AppIncidenciasXF/AltaOrdenLimpieza.xaml.cs" Line="41" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

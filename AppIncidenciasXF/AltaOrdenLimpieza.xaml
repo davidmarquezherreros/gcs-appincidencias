@@ -19,10 +19,10 @@
 				<Label Text="Elige al encargado:" FontSize="15"/>
 				<Picker Title="Encargado:" x:Name="pickerencargado">
 					<Picker.Items>
-						<x:String>Encargado 1</x:String>
-				        <x:String>Encargado 2</x:String>
-				        <x:String>Encargado 3</x:String>
-				        <x:String>Encargado 4</x:String>
+						<x:String>David Márquez Herreros</x:String>
+				        <x:String>Chamit Ouadi</x:String>
+				        <x:String>Manuel Garcia Menarguez</x:String>
+				        <x:String>Jose Garcia Menarguez</x:String>
 					</Picker.Items>
 				</Picker>
 				<Button Text="Crear orden" Clicked="Handle_Clicked"/>
