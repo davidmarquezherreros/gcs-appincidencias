@@ -6,12 +6,6 @@
 				<Label Text="Alta orden Mantenimiento" FontSize="25"/>
 				<Label Text="Habitacion:" FontSize="15"/>
 				<Picker Title="Elige una habitacion" x:Name="pickerhabitaciones">
-					<Picker.Items>
-						<x:String>Habitacion 1</x:String>
-				        <x:String>Habitacion 2</x:String>
-				        <x:String>Habitacion 3</x:String>
-				        <x:String>Habitacion 4</x:String>
-					</Picker.Items>
 				</Picker>
 				<Label Text="Horario:" FontSize="15"/>
 				<DatePicker Format="dd/MM/yyyy" x:Name="fecha"></DatePicker>

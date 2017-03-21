@@ -30,7 +30,7 @@ namespace AppIncidenciasXF
 					mi = user.incidencias[i];
 				}
 			}
-
+			LabelHabitacion.Text = "Habitación: "+mi.Nombre;
 			LabelDetalle.Text = mi.Detalle;
 			LabelObservaciones.Text = mi.Observaciones;
 			LabelEncargado.Text = mi.Encargado;
