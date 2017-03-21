@@ -29,9 +29,19 @@ namespace AppIncidenciasXF
 					h = user.habitaciones[i];
 				}
 			}
-			LabelDetalle.Text = h.Detalle;
 			LabelHorario.Text = "Horario: "+h.Horario;
 			LabelEncargado.Text = h.Encargado;
+			Habitacion habitacionauxiliar = new Habitacion();
+			foreach (Habitacion hab in user.habitacionesDisponibles) {
+				if (hab.Nombre == h.Nombre)
+				{
+					habitacionauxiliar = hab;
+				}
+			}
+			LabelTipo.Text = "Tipo: " + habitacionauxiliar.Tipo;
+			LabelTamaño.Text = "Tamaño: "+habitacionauxiliar.Tamanyo+"m\u00B2";
+			LabelSituacion.Text = "Situacion: "+habitacionauxiliar.Situacion;
+			LabelUbicacion.Text = "Ubicacion: "+habitacionauxiliar.Ubicacion;
 		}
 	}
 }
